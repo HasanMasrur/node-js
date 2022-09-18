@@ -17,9 +17,13 @@ fs.appendFile('file.txt','i am developer',function(err){
 fs.rename('file.txt', 'myfile.txt',function(err){
     if(err) throw err ;
     console.log("saved!");
-}),
+})
 // deleted
-fs.unlink('myfile.txt',function(err){
-    if(err) throw err ;
-    console.log("saved !");
+// fs.unlink('myfile.txt',function(err){
+//     if(err) throw err ;
+//     console.log("saved !");
+// })
+//read 
+fs.readFile('myfile.txt',(err,data)=>{
+    console.log(data.toString());
 })
