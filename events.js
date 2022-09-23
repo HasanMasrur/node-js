@@ -1,10 +1,8 @@
-const emitter = require('events');
 
-const emits = new emitter.EventEmitter();
-
-emits.on('start',({per, perss})=>{
-  console.log(`i hear a scream ${per} ${perss}`);
+ const School = require('./school');
+ const  school = new School();
+school.on('start',({bang, english})=>{
+  console.log(`i hear a scream ${bang} ${english}`);
 })
-emits.emit('start',{
-  per:'i am ',
-  perss:'hasan masrur babu'});
+school. startClasa();
+
